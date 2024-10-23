@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Banner interactivo con colores modificados -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/Logo emprendimiento reposteria beige.png" alt="Logo Dulces Tentaciones"></a>
+            </div>
+        </header>
+
+        <!-- Menú debajo del banner -->
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a>
+                    <ul>
+                        <li><a href="index.html#product">Producto 1</a></li>
+                        <li><a href="index.html#productos2">Producto 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contácto</a></li>
+                <li><a href="pasteles.html">Pedidos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a>
+                    <ul>
+                        <li><a href="Nosotros.html#presentacion">Presentación</a></li>
+                        <li><a href="Nosotros.html#Creadores">Nuestros Creadores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <form id="pastelesForm">
+            <div class="container-form">
+                <div class="container-pedido">
+                    <div class="card">
+                        <img src="img/snoopy cake.jpg" alt="Snoopy" width="250" height="100">
+                        <div>
+                            <h5>Snoopy Cake </h5>
+                            <p>$35000</p><p>"Bonito y amigable"</p>
+                            <input type="number" class="number" id="snoopy" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/Pastel de Zanahoria.jpg" alt="zanahoria" width="250" height="100">
+                        <div>
+                            <h5>Pastel de Zanahoria</h5>
+                            <p>$30000</p><p>"Dulce y familiar"</p>
+                            <input type="number" class="number" id="zanahoria" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/Pastel de naranja.jpg" alt="naranja" width="250" height="100">
+                        <div>
+                            <h5>Pastel de Naranja</h5>
+                            <p>$20000</p><p>"Bueno y saludable"</p>
+                            <input type="number" class="number" id="naranja" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/Red Velvet.jpg" alt="Pastel de Red Velvet" width="250"
+                            height="100">
+                        <div>
+                            <h5>Pastel de Red Velvet</h5>
+                            <p>$30000</p><p>"Suave y delicioso"</p>
+                            <input type="number" class="number" id="redvelvet" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/strawberry cake.jpg" alt="Pastel de Fresa" width="250" height="100">
+                        <div>
+                            <h5>Pastel de Fresa</h5>
+                            <p>$22000</p><p>"Cremoso y sabroso"</p>
+                            <input type="number" class="number" id="Fresa" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/mint-chocolate-cake-2.jpg" alt="Pastel Chocomenta" width="250" height="100">
+                        <div>
+                            <h5>Pastel Chocomenta</h5>
+                            <p>$25000</p><p>"Dulce y refrescante"</p>
+                            <input type="number" class="number" id="Chocomenta" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h3>Carrito de Compras</h3>
+                        <ul id="carrito"></ul>
+                        <h4>Total: $<span id="total">0.00</span></h4>
+                    </div>
+
+                    <div>
+                        <button type="button" class="button" onclick="solicitarPedido()">Solicitar Pedido</button>
+                        <button type="button" class="button" onclick="limpiarCarrito()">Limpiar Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Footer -->
+        <footer>
+            <section id="contacto">
+                <h2>¡Contáctanos!</h2>
+                <p>Queremos saber de ti. Llámanos o visítanos en nuestras redes sociales.
+                    cada una de  nuestras especialidades estan hechas con amor y validad. 
+                </p>
+                <div class="contact-info">
+                    <h4>Teléfono</h4>
+                    <p>+57 3166016002</p>
+                    <h4>Email</h4>
+                    <p>contacto@dulcetentacion.com</p>
+                    <h4>Redes Sociales</h4>
+                    <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+                </div>
+            </section>
+            <p>&copy; 2024 Dulce Tentación. Todos los derechos reservados para la IMA
+                Irina, Melany y Esteban.</p>
+        </footer>
+        <script src="js/carrito.js"></script>
+    </main>
+</body>
+</html>

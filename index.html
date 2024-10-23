@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Tentación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <!-- Banner interactivo con colores modificados -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/Logo emprendimiento reposteria beige.png" alt="Logo Dulces Tentaciones"></a>
+            </div>
+        </header>
+
+        <!-- Menú debajo del banner -->
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a>
+                    <ul>
+                        <li><a href="#product">Producto 1</a></li>
+                        <li><a href="#productos2">Producto 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contácto</a></li>
+                <li><a href="pasteles.html">Pedidos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a>
+                    <ul>
+                        <li><a href="Nosotros.html#presentacion">Presentación</a></li>
+                        <li><a href="Nosotros.html#Creadores">Nuestros Creadores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="slider-container" id="product">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/blue cake.jpg" alt="Pastel medianoche">
+                    </div>
+                    <div class="slide">
+                        <img src="img/flan.jpg" alt="Flan">
+                    </div>
+                    <div class="slide">
+                        <img src="img/new.jpg" alt="naked">
+                    </div>
+                </div>
+                <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+                <span class="next" onclick="moveSlide(1)">&#10095;</span>
+            </div>
+        </section>
+        <section class="container">
+            <div class="titulo">
+                <h2 id="productos2">Nuestros Pasteles Más Populares</h2>
+            </div>
+
+            <!-- Sección de Productos Destacados -->
+            <section class="container-productos" id="productos">
+                <div class="card">
+                    <img src="img/snoopy cake.jpg" alt=" Pastel de Snoopy">
+                    <h5 class="card-title">Snoopy Cake</h5>
+                </div>
+
+                <div class="card">
+                    <img src="img/Pastel de Zanahoria.jpg" alt="Pastel de Zanahoria">
+                    <h5 class="card-title">Pastel de Zanahoria</h5>
+                </div>
+
+                <div class="card">
+                    <img src="img/Pastel de naranja.jpg" alt="Pastel de naranja"  >
+                    <h5 class="card-title">Pastel de Naranja</h5>
+                </div>
+
+                <div class="card">
+                    <img src="img/Red Velvet.jpg" alt="Pastel de Red Velvet" >
+                    <h5 class="card-title">Pastel de Red Velvet</h5>
+                </div>
+
+                <div class="card">
+                    <img src="img/strawberry cake.jpg" alt="Pastel de Fresa" width="736px" height="736px">
+                    <h5 class="card-title">Pastel de Fresa</h5>
+                </div>
+
+                <div class="card">
+                    <img src="img/mint-chocolate-cake-2.jpg" alt="Pastel Chocomenta" >
+                    <h5 class="card-title">Pastel Chocomenta</h5>
+                </div>
+            </section>
+        </section>
+        <!-- Sección del mapa -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1217.1969142156283!2d-73.26051530560326!3d10.45011497766029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1725970855542!5m2!1ses!2sco"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <section id="contacto">
+                <h2>¡Contáctanos!</h2>
+                <p>Queremos saber de ti. Llámanos o visítanos en nuestras redes sociales.
+                    cada una de  nuestras especialidades estan hechas con amor y validad. </p>
+                <div class="contact-info">
+                    <h4>Teléfono</h4>
+                    <p>+57 3166016002</p>
+                    <h4>Email</h4>
+                    <p>contacto@dulcestentaciones.com</p>
+                </div>
+                <div>
+                    <h4>Redes Sociales</h4>
+                    <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+                </div>
+
+            </section>
+            <p>&copy;2024 Dulce Tentación. Todos los derechos reservados para la IMA
+                Irina, Melany y Esteban. </p>
+        </footer>
+        <script src="js/carruzel.js"></script>
+    </main>
+</body>
+
+</html>
